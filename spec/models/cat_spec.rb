@@ -15,4 +15,8 @@ RSpec.describe Cat, type: :model do
     cat = Cat.create  name: 'Buster',  age:4 
     expect(cat.errors[:enjoys]).to_not be_empty
   end  
+  it "enjoys should be minimum of 10 length" do
+    cat = Cat.create  name: 'Buster',  age:4, enjoys: 'eating'
+    expect(cat.errors[:enjoys]).to_not be_empty
+  end
 end
