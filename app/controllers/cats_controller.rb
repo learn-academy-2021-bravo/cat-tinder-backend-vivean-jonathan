@@ -7,7 +7,7 @@ class CatsController < ApplicationController
       def create
         # Create a new cat
         cat = Cat.create(cat_params)
-        if cat.valid
+        if cat.valid?
 
         # respond with our new cat
         render json: cat
