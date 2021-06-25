@@ -44,7 +44,7 @@ RSpec.describe "Cats", type: :request do
       # Assure that the created cat has the correct attributes
       expect(cat.name).to eq 'Buster'
       expect(cat.age).to eq (4)
-      expect(cat.name).to eq 'Meow Mix, and plenty of sunshine.'
+      expect(cat.enjoys).to eq 'Meow Mix, and plenty of sunshine.'
 
     end
   end

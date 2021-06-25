@@ -2,7 +2,7 @@ class CatsController < ApplicationController
     def index
         cats = Cat.all
         render json: cats
-    endls
+    end
 
       def create
         # Create a new cat
@@ -10,7 +10,7 @@ class CatsController < ApplicationController
 
         # respond with our new cat
         render json: cat
-            end
+    end
 
         # Handle strong parameters, so we are secure
        
